@@ -182,35 +182,51 @@ h1 span{
 }
 .chefs-box{
     /* position: relative; */
-    /* height:480px ; */
+    height:300px ;
     /* width: 500px;
     flex-direction: column; */
     /* flex:1 1 17rem; 
      overflow: hidden; */
+     display: flex;
+     /* justify-content: center; */
+     /* align-items: center; */
+     /* padding: 12px; */
+     border-radius: 7px;
+     position: relative;
+     box-shadow: 0px 4px 5px var(--text);
+     flex-direction: column;
+     text-align:justify;
     
 }
 .chefs-box img{
     width: 100%;
-    height: 50%;
+    height: 100%;
+    padding: 0;
     object-fit: cover;
     border-radius: 7px;
     object-position: center;
 }
 .chefs-content{
   
-    left: 0;
     width: 100%;
-     /* overflow: hidden;  */
-  z-index: 1000;
+    position: absolute;
+ /* display: none; */
+
     text-align:center;
+    /* top: -100%; */
     transition: .9s ease-in-out;
     padding: 20px;
 
-    padding-top: 8rem;
+    
+
    
 }
 .chefs-content:hover{
-top: 0;
+    visibility: visible;
+    z-index: 1000;
+    color:var(--bg);
+    display: block;
+top: 10%;
 }
 
 .chefs-content h4{
