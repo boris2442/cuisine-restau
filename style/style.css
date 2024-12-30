@@ -94,14 +94,15 @@ nav{
 .logo span{
     color:var(--accent);
 }
-#burger-menu{
+#burger-menu i{
     font-size: 2rem;
-color:var(--accent);
+/* color:var(--accent); */
 cursor: pointer;
+display: none;
 }
-#burger-menu:hover{
+#burger-menu i:hover{
     color:var(--accent2);
-    display: none;
+  
 }
 
 /* section home */
@@ -259,5 +260,29 @@ footer .copy{
 @media screen and (max-width:500px){
     form input, form textarea{
         width: 85%;
+    }
+    #burger-menu i{
+        display: block;
+    }
+   .navigation{
+        position: absolute;
+        display: flex;
+        gap:30px;
+        flex-direction: column;
+        top:9vh;
+      justify-content: center;
+      align-items: center;
+        left: -100%;
+        transition: 1s ease-in-out;
+        border-bottom-right-radius: 100px;
+        background-color: var(--bg);
+        width: 250px;
+        height: 350px;
+        text-align: center;
+    }
+    .active2{
+        position: absolute;
+        left: 0;
+        transition: .9s ease-in-out;
     }
 }
