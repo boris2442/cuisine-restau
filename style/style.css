@@ -18,6 +18,10 @@
     --text:#333;
    
 }
+img:hover{
+    filter: grayscale(100%);
+    transition: .4s ease-in-out;
+}
 .btn{
     padding: 10px 15px;
     background-color: var(--accent);
@@ -63,6 +67,7 @@ nav{
     padding: 1rem 2rem;
     width: 100%;
     display: flex;
+    background-color: var(--bg);
     justify-content: space-between;
 }
 .active{
@@ -146,6 +151,11 @@ h1 span{
     flex-direction: column;
     text-align:justify;
 }
+.services-box:hover{
+    background: var(--accent);
+    transition: .2s ease-in-out;
+    color:var(--bg);
+}
 .services-box img{
     width: 100px;
     height: 100px;
@@ -167,7 +177,7 @@ h1 span{
     gap: 1rem;
 }
 .chefs-box{
-    position: relative;
+    /* position: relative; */
     height:480px ;
     flex-direction: column;
     flex:1 1 17rem; 
@@ -180,28 +190,74 @@ h1 span{
     border-radius: 7px;
     object-position: center;
 }
-/* .chefs-content{
-    position:absolute;
-    top:-100%;
+.chefs-content{
+  
     left: 0;
     width: 100%;
-    overflow: hidden;
-    height: 100%;
+     /* overflow: hidden;  */
+  z-index: 1000;
     text-align:center;
     transition: .9s ease-in-out;
     padding: 20px;
 
     padding-top: 8rem;
    
-} */
+}
+.chefs-content:hover{
+top: 0;
+}
 
 .chefs-content h4{
-    font-size: clamp(18px,4vw,25px);
+    font-size: clamp(18px, 4vw, 25px);
 
 }
 .chefs-content p{
     margin-bottom: 2rem;
+   
 }
-/* .chefs-content:hover{
-top: 0;
-} */
+
+/* section contact */
+
+#contact form{
+    display: flex;
+    flex-direction: column;
+}
+form input, form textarea{
+    border: 1px solid var(--text);
+padding: 15px 10px;
+margin: 20px;
+width: 70%;
+border-radius: 7px;
+margin: 20px auto;
+}
+form textarea{
+    position: relative;
+    resize: none;
+    height: 150px;
+}
+
+
+#contact form input[type='submit']{
+    background-color: var(--accent);
+    color:var(--bg);
+    cursor: pointer;
+}
+#contact form input[type='submit']:hover{
+    background: var(--text);
+    transition: .5s ease-in-out;
+    border: none;
+}
+
+/* section footer */
+footer .copy{
+    text-align: center;
+    padding: 40px 0;
+    color:var(--bg);
+    background-color: var(--accent);
+}
+
+@media screen and (max-width:500px){
+    form input, form textarea{
+        width: 85%;
+    }
+}
