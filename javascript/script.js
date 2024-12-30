@@ -29,3 +29,6 @@ const navigation=document.querySelector(".navigation");
 menu.addEventListener("click", ()=>{
     navigation.classList.toggle("active2")
 })
+window.addEventListener("scroll", ()=>{
+    navigation.classList.remove("active2")
+})
