@@ -36,19 +36,21 @@ window.addEventListener("scroll", ()=>{
 // Ajouter une classe active à un lien lors du défilement
 
 const sections=document.querySelectorAll("section");
-const links=document.querySelectorAll("header ul li a")
+const links=document.querySelectorAll("nav ul li a")
 
 const scrollActive=()=>{
     sections.forEach(section=>{
         let top = section.offsetTop;
         let height = section.offsetHeight;
         let scroll = window.scrollY;
+        let id=section.getAttribute("id");
         if(scroll>=top - 400 && scroll<top + height){
-            links.forEach(link=>{
+            links.forEach(link => {
                 link.classList.remove("active")
-                console.log("hello!")
+             
             })
-          
+            let recuperationId=document.querySelector(`nav ul li a[href*=${id}]`)
+            recuperationId.classList.add("active")
         }
     })
 }
