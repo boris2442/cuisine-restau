@@ -172,25 +172,17 @@ h1 span{
 
 /* section chefs */
 .chefs-container{
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* flex-wrap: wrap;
-    gap: 1rem; */
+   
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px,auto));
     gap:1.8rem;
 }
 .chefs-box{
-    /* position: relative; */
+
     height:300px ;
-    /* width: 500px;
-    flex-direction: column; */
-    /* flex:1 1 17rem; 
-     overflow: hidden; */
+   
      display: flex;
-     /* justify-content: center; */
-     /* align-items: center; */
-     /* padding: 12px; */
+ 
      border-radius: 7px;
      position: relative;
      box-shadow: 0px 4px 5px var(--text);
@@ -210,10 +202,10 @@ h1 span{
   
     width: 100%;
     position: absolute;
- /* display: none; */
+
 
     text-align:center;
-    /* top: -100%; */
+ 
     transition: .9s ease-in-out;
     padding: 20px;
 

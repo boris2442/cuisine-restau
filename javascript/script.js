@@ -12,7 +12,7 @@ sr.reveal(".footer-text, .home, .services, .chefs, .contact", {interval:200})
 const title=document.querySelector("h1")
 const app = new Typewriter(title, {
     loop:true,
-    delay:200
+    delay:100
 
 })
 .typeString("Rencontrez les <span>chefs étoilés !</span>")
@@ -32,3 +32,25 @@ menu.addEventListener("click", ()=>{
 window.addEventListener("scroll", ()=>{
     navigation.classList.remove("active2")
 })
+
+// Ajouter une classe active à un lien lors du défilement
+
+const sections=document.querySelectorAll("section");
+const links=document.querySelectorAll("header ul li a")
+
+const scrollActive=()=>{
+    sections.forEach(section=>{
+        let top = section.offsetTop;
+        let height = section.offsetHeight;
+        let scroll = window.scrollY;
+        if(scroll>=top - 400 && scroll<top + height){
+            links.forEach(link=>{
+                link.classList.remove("active")
+                console.log("hello!")
+            })
+          
+        }
+    })
+}
+
+window.addEventListener("scroll", scrollActive )
