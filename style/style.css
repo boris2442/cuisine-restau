@@ -419,3 +419,23 @@ footer .copy{
     background-color: #e0e0e0; 
   } 
    
+
+  @media screen and (max-width:670px){
+    form{
+        position: relative;
+    }
+    label{
+        position: relative;
+    }
+    input[type='checkbox']{
+  
+        position: absolute;
+
+        width: 20px;
+        height: 20px;
+        right: -80%;
+        bottom: -20%;
+        display: block;
+        cursor: pointer;
+    }
+  }
