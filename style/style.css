@@ -312,6 +312,7 @@ top: 10%;
 
 #contact form{
     display: flex;
+    position: relative;
     flex-direction: column;
 }
 form input, form textarea{
@@ -322,13 +323,26 @@ width: 70%;
 border-radius: 7px;
 margin: 20px auto;
 }
+
 form textarea{
     position: relative;
     resize: none;
     height: 150px;
 }
-
-
+input[type='checkbox']{
+    width: 20px;
+    height: 20px;
+    left: 15%;
+    bottom: 12%;
+    cursor: pointer;
+     position: absolute;
+}
+label{
+ 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
 #contact form input[type='submit']{
     background-color: var(--accent);
     color:var(--bg);
@@ -385,7 +399,7 @@ footer .copy{
   }
   
   body::-webkit-scrollbar-track {
-    background: #000; 
+    background: #333; 
   }
   
   body::-webkit-scrollbar-thumb {
