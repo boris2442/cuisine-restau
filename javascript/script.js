@@ -98,7 +98,7 @@ forms.addEventListener("submit", (e) => {
 const textarea=document.querySelector("textarea")
 textarea.addEventListener("input", (e)=>{
     if (e.target.value.length < 10 || e.target.value.length > 90) {
-        inputSurname.classList.add("error");
+        textarea.classList.add("error");
         spanTextarea.style.paddingLeft='30px';
         spanTextarea.textContent = "le nom doit avoir entre 10 et 90 caracteres";
       } else {
