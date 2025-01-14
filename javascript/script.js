@@ -65,14 +65,17 @@ window.onload = function() {
 
 
   const symbols = /[^a-zA-Z0-9\s]/;
+  const inputCheckbox = document.querySelector("input[type ='checkbox']");
   const spanName = document.getElementById("spanName");
   const spanSurname = document.getElementById("spanSurname");
   const spanTextarea=document.getElementById("spanTextarea");
-
+const inputSumbit = document.querySelector("input[type='submit'");
+const forms=document.querySelector("form");
   const inputName=document.querySelector("#name");
- const inputSurname=document.getElementById("surname")
+  const labels = document.querySelector("label")
+ const inputSurname=document.getElementById("surname");
   inputName.addEventListener("input", (e)=>{
-console.log(e.target.value)
+console.log(e.target.value);
 
 if(e.target.value.length < 3 || e.target.value.length >20){
     inputName.classList.add("error");
@@ -84,6 +87,26 @@ else{
      spanName.textContent='';
 }
   })
+
+  inputSurname.addEventListener("input", (e)=>{
+    if(e.target.value.length < 3 || e.target.value.length >20){
+        inputSurname.classList.add("error");
+        spanSurname.textContent = 'le nom doit avoir entre 3 et 30 caracteres';
+    }else{
+        inputSurname.classList.remove("error");
+         spanSurname.textContent='';
+    }
+  });
+
+
+  forms.addEventListener("input", (e)=>{
+      if(!inputCheckbox.checked){
+        //   labels.classList.add("error")
+          e.preventDefault()
+        }
+})
+
+  
 
 
   
