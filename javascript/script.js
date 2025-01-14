@@ -68,3 +68,22 @@ window.onload = function() {
   const spanName = document.getElementById("spanName");
   const spanSurname = document.getElementById("spanSurname");
   const spanTextarea=document.getElementById("spanTextarea");
+
+  const inputName=document.querySelector("#name");
+ const inputSurname=document.getElementById("surname")
+  inputName.addEventListener("input", (e)=>{
+console.log(e.target.value)
+
+if(e.target.value.length < 3 || e.target.value.length >20){
+    inputName.classList.add("error");
+    spanName.textContent='le nom doit avoir entre 3 et 30 caracteres';
+}
+
+else{
+    inputName.classList.remove("error");
+     spanName.textContent='';
+}
+  })
+
+
+  

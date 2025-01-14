@@ -367,7 +367,9 @@ footer .copy{
     color:var(--bg);
     background-color: var(--accent);
 }
-
+.error{
+    border: 3px solid red;
+}
 @media screen and (max-width:500px){
     form input, form textarea{
         width: 85%;
