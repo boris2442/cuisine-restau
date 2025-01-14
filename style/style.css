@@ -343,6 +343,12 @@ label{
    justify-content: center;
    align-items: center;
 }
+form span{
+    /* border:1px solid red; */
+    width: 70%;
+    height: 20px;
+  margin: 0px auto;
+}
 #contact form input[type='submit']{
     background-color: var(--accent);
     color:var(--bg);

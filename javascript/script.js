@@ -62,3 +62,9 @@ window.onload = function() {
     document.querySelector('.loader').style.display = 'none';
     document.querySelector('.loader').style.transition='5s ease-out'
   };
+
+
+  const symbols = /[^a-zA-Z0-9\s]/;
+  const spanName = document.getElementById("spanName");
+  const spanSurname = document.getElementById("spanSurname");
+  const spanTextarea=document.getElementById("spanTextarea");
