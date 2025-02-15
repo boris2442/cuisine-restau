@@ -9,7 +9,7 @@
     text-decoration: none;
     scroll-behavior: smooth;
     list-style: none;
-    font-family: cursive;
+    font-family: 'Poppins';
 }
 :root{
     --accent:crimson;
