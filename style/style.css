@@ -133,6 +133,7 @@ section{
 }
 img{
     width: 100%;
+    opacity: 0;
 }
 
 /* css de la navigation */

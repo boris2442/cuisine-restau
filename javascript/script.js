@@ -122,6 +122,7 @@ function handleIntersection(entries){
 entries.forEach(entry=>{
     if(entry.isIntersecting){
         entry.target.style.opacity=1
+       
     }
 })
 }
@@ -130,4 +131,5 @@ const observer=new IntersectionObserver(handleIntersection, options)
 
 images.forEach(image=>{
 observer.observe(image)
+
 })
