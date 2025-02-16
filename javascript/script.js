@@ -107,3 +107,27 @@ textarea.addEventListener("input", (e)=>{
 
       } 
 })
+
+
+const images=document.querySelectorAll('img');
+let options={
+    root:null,
+    rootMargin:"-100px 0px 0px 0px",
+    threshold:0
+};
+
+
+function handleIntersection(entries){
+
+entries.forEach(entry=>{
+    if(entry.isIntersecting){
+        entry.target.style.opacity=1
+    }
+})
+}
+
+const observer=new IntersectionObserver(handleIntersection, options)
+
+images.forEach(image=>{
+observer.observe(image)
+})

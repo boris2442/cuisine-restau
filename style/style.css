@@ -174,7 +174,7 @@ nav{
 }
 #burger-menu i{
     font-size: 2rem;
-/* color:var(--accent); */
+
 cursor: pointer;
 display: none;
 }
