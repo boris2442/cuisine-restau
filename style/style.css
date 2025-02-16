@@ -40,7 +40,7 @@
     z-index: 9999; 
 }
 .lettre{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
     animation:anim-welcome 1.5s linear infinite;
 }
 @keyframes anim-welcome{
