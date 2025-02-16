@@ -56,7 +56,7 @@ window.addEventListener("scroll", scrollActive);
 
 window.onload = function () {
   document.querySelector(".loader").style.display = "none";
-  document.querySelector(".loader").style.transition = "5s ease-out";
+  document.querySelector(".loader").style.transition = "3s ease-out";
 };
 
 const symbols = /[^a-zA-Z0-9\s]/;
